@@ -1,11 +1,105 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
-
-
-:root {
-	background-color: #e8f7fc;
-    	
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Source+Sans+Pro&display=swap'); :root {
+    background-color: #e8f7fc;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-body header .shop-name{
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .upper-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 0 30px 0 0;
+}
+
+.phone-selection {
+    background-color: #c8f0f5;
+    min-width: 150px;
+    height: 20px;
+    padding: 2px 0 0 2px;
+    margin: 0 0 0 5px;
+}
+
+.lang-change {
+    margin: 0 4px 0 0;
+}
+
+header .middle-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .shop-name-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 485px;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.shop-name {
     font-family: 'Audiowide', cursive;
+    font-size: 5rem;
+    margin: 2px;
+    padding: 2px;
 }
+
+.shop-name-explanation {
+    margin: 0 0 2px 2px;
+    font-size: 1.3em;
+}
+
+header .nav-logo {
+    display: flex;
+    width: 485px;
+    align-items: center;
+    justify-content: space-around;    
+    margin: 0 0 0 0;
+}
+
+.search {
+    width: 89%;
+    margin: 2px 0 2px 5px;
+    background-color: #c8f0f5;
+    border-color: #c8f0f5;
+}
+
+.search-button {
+    width: 60px;
+    margin: 0 4px 0 0;
+    background-color: #c8f0f5;
+    border-color: #c8f0f5;
+}
+
+@media (max-width: 600px) {
+    div.nav-logo {
+        display:none;
+    }
+
+    ; }
+
+@media (max-width: 600px) {
+    div.shop-name-box {
+        justify-content: center;
+    }
+
+    ; }
+
+@media(max-width: 600px) {
+    div.upper-header {
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    ; }
+
+@media(min-width: 600px) {
+    img.burger-menu-logo {
+        display:none;
+    }
+
+    ; }
