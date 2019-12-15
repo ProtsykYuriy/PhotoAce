@@ -36,25 +36,41 @@ siteUsage.addEventListener('click', itemInfoAlertion.bind(this,siteUsageInfo));
 let camerasCatalogue = document.querySelector('#cameraslist');
 //camerasCatalogue.children.remove(canonCameras);
 const canon5dmarkIV = document.querySelector('#canon5dmarkIV');
-	const canon800D = document.querySelector('#canon800D');
-	const canon500D = document.querySelector('#canon500D');
-	const sonyAlphaA6100 = document.querySelector('#sony-alphaA6100');
-	const sonyCyberShotDSCRX10 = document.querySelector('#sony-cyber-shotDSC-RX10');
-	const olympusFE4000 = document.querySelector('#olympusFE4000');
-	const nikonZ6 = document.querySelector('#nikonZ6');
-	const nikonZ50 = document.querySelector('#nikonZ50');
-	const nikonD5600 = document.querySelector('#nikonD5600');
+const canon800D = document.querySelector('#canon800D');
+const canon500D = document.querySelector('#canon500D');
+const sonyAlphaA6100 = document.querySelector('#sony-alphaA6100');
+const sonyCyberShotDSCRX10 = document.querySelector('#sony-cyber-shotDSC-RX10');
+const olympusFE4000 = document.querySelector('#olympusFE4000');
+const nikonZ6 = document.querySelector('#nikonZ6');
+const nikonZ50 = document.querySelector('#nikonZ50');
+const nikonD5600 = document.querySelector('#nikonD5600');
 
-	const btnFilterCanon = document.querySelector('#btn-filter-canon')
-	const btnFilterNikon = document.querySelector('#btn-filter-nikon')
-	const btnFilterOlympus = document.querySelector('#btn-filter-olympus')
-	const btnFilterSony = document.querySelector('#btn-filter-sony')
-	const btnFilterBody = document.querySelector('#btn-filter-body')
-	const btnFilterKit = document.querySelector('#btn-filter-kit')
-	const btnFilter16px = document.querySelector('#btn-filter-16px')
-	const btnFilter16_20px = document.querySelector('#btn-filter-16-20px')
-	const btnFilter20px = document.querySelector('#btn-filter-20px')
-// for(let i=0; i<10; i++){
+const btnFilterCanon = document.querySelector('#btn-filter-canon');
+const btnFilterNikon = document.querySelector('#btn-filter-nikon');
+const btnFilterOlympus = document.querySelector('#btn-filter-olympus');
+const btnFilterSony = document.querySelector('#btn-filter-sony');
+const btnFilterBody = document.querySelector('#btn-filter-body');
+const btnFilterKit = document.querySelector('#btn-filter-kit');
+const btnFilter16px = document.querySelector('#btn-filter-16px');
+const btnFilter16_20px = document.querySelector('#btn-filter-16-20px');
+const btnFilter20px = document.querySelector('#btn-filter-20px');
+
+const shoppingCartMain=document.querySelector('#shopping-cart-main');
+const buyBtn=document.querySelector('main ul li.canon a button.buy-btn');
+let buyBtnMain = document.querySelector('button.buy-btn-main');
+buyBtnMain.addEventListener('click',cartAddItem);
+function cartAddItem(){ 
+           
+    shoppingCartMain.appendChild(canon5dmarkIV)
+};
+
+
+
+
+
+
+
+    // for(let i=0; i<10; i++){
 // 	const canonRemove = document.querySelector('ul li.canon');
 // 	camerasCatalogue.removeChild(canonRemove);
 // }
@@ -77,8 +93,10 @@ function login(e) {
         },
         body: JSON.stringify({
             city: document.querySelector('.login-form input[name=city]').value,
+            novaposhta: document.querySelector('.login-form input[name=novaposhta]').value,
+            surname: document.querySelector('.login-form input[name=surname]').value,
             name: document.querySelector('.login-form input[name=name]').value,
-            password: document.querySelector('.login-form input[name=password]').value
+            phone: document.querySelector('.login-form input[name=phone]').value
         })
     })
     .then(_ => document.querySelector('.login-form').reset());
