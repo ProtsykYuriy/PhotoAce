@@ -36,10 +36,10 @@ siteUsage.addEventListener('click', itemInfoAlertion.bind(this,siteUsageInfo));
 let camerasCatalogue = document.querySelector('#cameraslist');
 //camerasCatalogue.children.remove(canonCameras);
 
-for(let i=0; i<10; i++){
-	const canonRemove = document.querySelector('ul li.canon');
-	camerasCatalogue.removeChild(canonRemove);
-}
+// for(let i=0; i<10; i++){
+// 	const canonRemove = document.querySelector('ul li.canon');
+// 	camerasCatalogue.removeChild(canonRemove);
+// }
 
 // for (let i=0; i<5; i++) {
 //     const parToRemove = document.querySelector('section p.dynamic');
@@ -58,6 +58,7 @@ function login(e) {
             // 'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: JSON.stringify({
+            city: document.querySelector('.login-form input[name=city]').value,
             name: document.querySelector('.login-form input[name=name]').value,
             password: document.querySelector('.login-form input[name=password]').value
         })
