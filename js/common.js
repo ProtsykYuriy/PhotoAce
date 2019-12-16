@@ -31,31 +31,6 @@ itemReturn.addEventListener('click', itemInfoAlertion.bind(this,itemReturnInfo))
 let siteUsage = document.querySelector('#site-usage');
 siteUsage.addEventListener('click', itemInfoAlertion.bind(this,siteUsageInfo));
 ///////////////////////////////////////////////////////////////////////////////////////////////
-
-// document.querySelector('.login-form input[type=submit]')
-//     .addEventListener('click', login);
-// function login(e) {
-//     e.preventDefault();
-//     fetch('login', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//             // 'Content-Type': 'application/x-www-form-urlencoded',
-//         },
-//         body: JSON.stringify({
-//             city: document.querySelector('.login-form input[name=city]').value,
-//             novaposhta: document.querySelector('.login-form input[name=novaposhta]').value,
-//             surname: document.querySelector('.login-form input[name=surname]').value,
-//             name: document.querySelector('.login-form input[name=name]').value,
-//             phone: document.querySelector('.login-form input[name=phone]').value
-//         })
-//     })
-//     .then(_ => document.querySelector('.login-form').reset());
-// }
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// let aboutUsStoryEng = 'PhotoAce is the largest online retailer in the country. For 14 years now, we have been living the small dreams and grandiose plans of millions of people. Here you can find almost anything. We sell at a fair price and we guarantee that we believe online shopping should be as convenient and safe as possible. And every time someone clicks "Buy", we understand that we are doing the right thing.We believe that things exist to make life easier, more enjoyable and kinder. Therefore, the search for the same thing should be fast, convenient and enjoyable. We don`t just sell household appliances, electronics, jewelry or wine. We help you find exactly what you need, in one place and without any hassle, so you don`t spend your life searching and just living happily ever after. PhotoAce is the universal answer to any query, search start and end stop, a true helper. We are forever depriving our customers of unpleasant compromises, fulfilling desires and enabling us to dream more boldly. With smart search and honest service, we make our clients` lives a little better now.'
-// let aboutUsStory = document.querySelector('#about-us-story');
-// aboutUsStory.textContent = aboutUsStoryEng;
 const tradeMark = document.querySelector('#trademark');
 const ourAddress = document.querySelector('#ouraddress');
 const weAreSocial = document.querySelector('#wearesocial');
@@ -97,40 +72,3 @@ function langUkrChange(){
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-//let canonCameras = document.getElementsByClassName('.canon');
-let camerasCatalogue = document.querySelector('#cameraslist');
-//camerasCatalogue.children.remove(canonCameras);
-const canon5dmarkIV = document.querySelector('#canon5dmarkIV');
-const canon800D = document.querySelector('#canon800D');
-const canon500D = document.querySelector('#canon500D');
-const sonyAlphaA6100 = document.querySelector('#sony-alphaA6100');
-const sonyCyberShotDSCRX10 = document.querySelector('#sony-cyber-shotDSC-RX10');
-const olympusFE4000 = document.querySelector('#olympusFE4000');
-const nikonZ6 = document.querySelector('#nikonZ6');
-const nikonZ50 = document.querySelector('#nikonZ50');
-const nikonD5600 = document.querySelector('#nikonD5600');
-
-const btnFilterCanon = document.querySelector('#btn-filter-canon');
-const btnFilterNikon = document.querySelector('#btn-filter-nikon');
-const btnFilterOlympus = document.querySelector('#btn-filter-olympus');
-const btnFilterSony = document.querySelector('#btn-filter-sony');
-const btnFilterBody = document.querySelector('#btn-filter-body');
-const btnFilterKit = document.querySelector('#btn-filter-kit');
-const btnFilter16px = document.querySelector('#btn-filter-16px');
-const btnFilter16_20px = document.querySelector('#btn-filter-16-20px');
-const btnFilter20px = document.querySelector('#btn-filter-20px');
-
-    // for(let i=0; i<10; i++){
-// 	const canonRemove = document.querySelector('ul li.canon');
-// 	camerasCatalogue.removeChild(canonRemove);
-// }
-
-// for (let i=0; i<5; i++) {
-//     const parToRemove = document.querySelector('section p.dynamic');
-//     sect.removeChild(parToRemove);
-// }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
-
-
