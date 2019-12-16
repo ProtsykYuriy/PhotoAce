@@ -13,12 +13,12 @@
 				<option>0502395930</option>
 			</select>
 			<h1 >PhotoAce</h1>
-			<h3>Інтернет магазин фототехніки</h3>
+			<h3 id='titleexpl'>Інтернет магазин фототехніки</h3>
 			<form>				
-				<label><input type="radio" name="langselect">EN</label>
-				<label><input type="radio" name="langselect">UA</label>				
+				<label><input type="radio" name="langselect" id='EngON'>EN</label>
+				<label><input type="radio" name="langselect" id='UkrON' checked>UA</label>				
 			</form>
-			<img src="photos/home_page_logo.png" alt="home page logo" width="50" >
+			<a href="index.html"><img src="photos/home_page_logo.png" alt="home page logo" width="50" ></a>
 			<img src="photos/mail_logo.png" alt="mail logo" width="50">
 			<a href="shopping-cart.html"><img src="photos/shopping_cart_logo.png" alt="shopping cart logo" width="50"></a>		
 			<label><input type="search" name="item search" placeholder="Я шукаю..."></label>
@@ -59,21 +59,15 @@
             <input type="submit">
          </form>
     	</section>	
-		<section class="about-us">			
-				<h5>Про нас:</h5>
-				<p><b>PhotoAce</b> - найбільший онлайн-ритейлер у країні. Уже протягом 14 років ми втілюємо маленькі мрії та грандіозні плани мільйонів людей. У нас можна знайти буквально все. Ми продаємо за справедливою ціною та надаємо гарантію, бо вважаємо, що онлайн-шопінг має бути максимально зручним і безпечним. І щоразу, коли хтось натискає «Купити», ми розуміємо, що робимо потрібну справу.
-
-				Ми віримо, що речі існують для того, щоб робити життя простішим, приємнішим і добрішим. Тому й пошук тієї самої речі повинен бути швидким, зручним і приємним. Ми не просто продаємо побутову техніку, електроніку, прикраси або вино. Ми допомагаємо знайти саме те, що треба, в одному місці та без зайвих хвилювань, щоб ви не витрачали життя на пошуки, а просто жили щасливо. <b>PhotoAce </b>− це універсальна відповідь на будь-який запит, початок пошуку та його кінцева зупинка, справжній помічник. Ми назавжди позбавляємо своїх покупців від неприємних компромісів, виконуємо бажання і даємо змогу мріяти сміливіше. Завдяки розумному пошуку та чесному сервісу ми робимо життя наших клієнтів трішки кращим просто зараз.</p>					
-		</section>			
 		<footer>
 			<div>
-				<h5>Ми в соцмережах:</h5>
+				<h5 id='wearesocial'>Ми в соцмережах:</h5>
 				<a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity"><img src="photos/facebook_logo.png" alt="facebook logo" width="100"></a>
 				<a href="https://www.youtube.com/"><img src="photos/youtube_logo.png" alt="youtube logo" width="100"></a>
 				<a href="https://twitter.com/?lang=uk"><img src="photos/twitter_logo.png" alt="twitter logo" width="100"></a>
 			</div>
 			<div>
-				<p>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
+				<p id='ouraddress'>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1286.7514902536448!2d23.9979472!3d49.833006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add80fb64ef2f%3A0xc5f866f3d4e99c79!2sSoftServe%20Lviv%204!5e0!3m2!1suk!2sua!4v1576356531888!5m2!1suk!2sua" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>">
 			</div>
 			<div>
@@ -87,9 +81,10 @@
 				<button id="item-return">Повернення товару</button>
 				<button id="contacts">Контакти</button>
 			</div>
-			<p>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>				
+			<p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>				
 		</footer>
-        <script type="text/javascript" src="js/index.js" defer></script>
+        <script type="text/javascript" src="js/shopping-cart.js" defer></script>
+        <script type="text/javascript" src="js/common.js" defer></script>
 
 </body>
 </html>

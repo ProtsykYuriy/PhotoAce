@@ -13,12 +13,12 @@
 				<option>0502395930</option>
 			</select>
 			<h1 >PhotoAce</h1>
-			<h3>Інтернет магазин фототехніки</h3>
+			<h3 id='titleexpl'>Інтернет магазин фототехніки</h3>
 			<form>				
-				<label><input type="radio" name="langselect">EN</label>
-				<label><input type="radio" name="langselect">UA</label>				
+				<label><input type="radio" name="langselect" id='EngON'>EN</label>
+				<label><input type="radio" name="langselect" id='UkrON' checked>UA</label>				
 			</form>
-			<img src="photos/home_page_logo.png" alt="home page logo" width="50" >
+			<a href="index.html"><img src="photos/home_page_logo.png" alt="home page logo" width="50" ></a>
 			<img src="photos/mail_logo.png" alt="mail logo" width="50">
 			<a href="shopping-cart.html"><img src="photos/shopping_cart_logo.png" alt="shopping cart logo" width="50"></a>		
 			<label><input type="search" name="item search" placeholder="Я шукаю..."></label>
@@ -113,13 +113,13 @@
 		</main>
 		<footer>
 			<div>
-				<h5>Ми в соцмережах:</h5>
+				<h5 id='wearesocial'>Ми в соцмережах:</h5>
 				<a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity"><img src="photos/facebook_logo.png" alt="facebook logo" width="100"></a>
 				<a href="https://www.youtube.com/"><img src="photos/youtube_logo.png" alt="youtube logo" width="100"></a>
 				<a href="https://twitter.com/?lang=uk"><img src="photos/twitter_logo.png" alt="twitter logo" width="100"></a>
 			</div>
 			<div>
-				<p>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
+				<p id='ouraddress'>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
 				<img src="photos/location_map.jpg" alt="location map" width="400">
 			</div>
 			<div>
@@ -133,8 +133,9 @@
 				<button id="item-return">Повернення товару</button>
 				<button id="contacts">Контакти</button>
 			</div>
-			<p>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>				
+			<p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>				
 		</footer>
-		<script type="text/javascript" src="js/index.js" defer></script>
+		<script type="text/javascript" src="js/camerascatalog.js" defer></script>
+        <script type="text/javascript" src="js/common.js" defer></script>
 	</body>
 </html>
