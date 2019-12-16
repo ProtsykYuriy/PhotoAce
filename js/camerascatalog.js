@@ -1,6 +1,6 @@
 
 //let canonCameras = document.getElementsByClassName('.canon');
-let camerasCatalogue = document.querySelector('#cameraslist');
+const camerasCatalogue = document.querySelector('#cameraslist');
 //camerasCatalogue.children.remove(canonCameras);
 const canon5dmarkIV = document.querySelector('#canon5dmarkIV');
 const canon800D = document.querySelector('#canon800D');

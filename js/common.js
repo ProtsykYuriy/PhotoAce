@@ -12,29 +12,30 @@ function itemInfoAlertion(n){
     alert(n);
 };
 
-let makingAnOrder = document.querySelector('#making-an-order');
+const makingAnOrder = document.querySelector('#making-an-order');
 makingAnOrder.addEventListener('click', itemInfoAlertion.bind(this,makingAnOrderInfo));
-let shippingAndPayment = document.querySelector('#shipping-and-payment');
+const shippingAndPayment = document.querySelector('#shipping-and-payment');
 shippingAndPayment.addEventListener('click', itemInfoAlertion.bind(this,shippingAndPaymentInfo));
-let warranty = document.querySelector('#warranty');
+const warranty = document.querySelector('#warranty');
 warranty.addEventListener('click', itemInfoAlertion.bind(this,warrantyInfo));
-let credit = document.querySelector('#credit');
+const credit = document.querySelector('#credit');
 credit.addEventListener('click', itemInfoAlertion.bind(this,creditInfo));
-let serviceCenters = document.querySelector('#service-centers');
+const serviceCenters = document.querySelector('#service-centers');
 serviceCenters.addEventListener('click', itemInfoAlertion.bind(this,serviceCentersInfo));
-let aboutTheCompany = document.querySelector('#about-the-company');
+const aboutTheCompany = document.querySelector('#about-the-company');
 aboutTheCompany.addEventListener('click', itemInfoAlertion.bind(this,aboutTheCompanyInfo));
-let contacts = document.querySelector('#contacts');
+const contacts = document.querySelector('#contacts');
 contacts.addEventListener('click', itemInfoAlertion.bind(this,contactsInfo));
-let itemReturn = document.querySelector('#item-return');
+const itemReturn = document.querySelector('#item-return');
 itemReturn.addEventListener('click', itemInfoAlertion.bind(this,itemReturnInfo));
-let siteUsage = document.querySelector('#site-usage');
+const siteUsage = document.querySelector('#site-usage');
 siteUsage.addEventListener('click', itemInfoAlertion.bind(this,siteUsageInfo));
 ///////////////////////////////////////////////////////////////////////////////////////////////
 const tradeMark = document.querySelector('#trademark');
 const ourAddress = document.querySelector('#ouraddress');
 const weAreSocial = document.querySelector('#wearesocial');
 const titleExplanation = document.querySelector('#titleexpl');
+const searchBtn = document.querySelector('#search-btn')
 
 const btnEnglishSwitchON = document.querySelector('#EngON');
 btnEnglishSwitchON.addEventListener('click',langEngChange);
@@ -51,7 +52,8 @@ function langEngChange(){
 	aboutTheCompany.textContent = 'About us';	
 	contacts.textContent = 'Contacts';
 	itemReturn.textContent = 'Item return';
-	siteUsage.textContent = 'Site usage';
+    siteUsage.textContent = 'Site usage';
+    searchBtn.textContent = 'Search';
 }
 const btnUkrainianSwitchON = document.querySelector('#UkrON');
 btnUkrainianSwitchON.addEventListener('click',langUkrChange);
@@ -68,7 +70,6 @@ function langUkrChange(){
 	aboutTheCompany.textContent = 'Про компанію';	
 	contacts.textContent = 'Контакти';
 	itemReturn.textContent = 'Повернення товару';
-	siteUsage.textContent = 'Використання сайту';
+    siteUsage.textContent = 'Використання сайту';
+    searchBtn.textContent = 'Пошук';
 }
-
-///////////////////////////////////////////////////////////////////////////////////////////////////

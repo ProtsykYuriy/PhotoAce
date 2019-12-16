@@ -1,93 +1,121 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<link rel="stylesheet" type="text/css" href="">
-		<meta charset="utf-8">	
-		<title>Item Info</title>
-	</head>
-	<body>
-		<header>
-			<select>
-				<option>0972395930</option>
-				<option>0982395930</option>
-				<option>0502395930</option>
-			</select>
-			<h1>PhotoAce</h1>
-			<h3 id='titleexpl'>Інтернет магазин фототехніки</h3>
-			<form>				
-				<label><input type="radio" name="langselect" id='EngON'>EN</label>
-				<label><input type="radio" name="langselect" id='UkrON' checked>UA</label>				
-			</form>
-			<a href="index.html"><img src="photos/home_page_logo.png" alt="home page logo" width="50" ></a>
-			<img src="photos/mail_logo.png" alt="mail logo" width="50">
-			<a href="shopping-cart.html"><img src="photos/shopping_cart_logo.png" alt="shopping cart logo" width="50"></a>		
-			<label><input type="search" name="item search" placeholder="Я шукаю..."></label>
-			<button>Пошук</button><br/>
-			<button>Усе про товар</button><button>Характеристики</button><button>Фото</button><button>Відгуки</button>				
-		</header>
-		<main>
-			<div>
-				<h2>Фотоапарат Canon EOS 5D Mark IV Body Black</h2>
-				<img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="300">
-				<p>Ціна:</p>
-				<p><b>63499</b></p>
-				<button class="buy-btn-main"><b>Купити</b></button>
-				<img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="50">
-				<img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="50">
-				<img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="50">
-			</div>
-			<div>
-				<h5>Усе про товар:</h5>
-				<p>Матриця 36 x 24 мм, 30.4 Мп / підтримка карт пам'яті CompactFlash Type I, SD, SDHC, SDXC (UHS-I) / LCD-дисплей 3.2" / 4K-відео / живлення від літій-іонного акумулятора / 150.7 x 116.4 x 75.9 мм, 800 г (тільки корпус) / чорний</p>
-			</div>
-			<div>
-				<h5>Характеристики:</h5>
-				<table width="700" cellpadding="0" align="left" height="250" cellspacing="0">
-					<tr>
-						<td>Тип матриці</td>
-						<td>Тип: 36 x 24 мм CMOSЕфективні пікселі: Прибл. 30.4 мегапікселя
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="utf-8">
+        <title>Item Info</title>
+    </head>
+    <body>
+        <header>
+            <select>
+                <option>0972395930</option>
+                <option>0982395930</option>
+                <option>0502395930</option>
+            </select>
+            <h1>PhotoAce</h1>
+            <h3 id='titleexpl'>Інтернет магазин фототехніки</h3>
+            <form>
+                <label>
+                    <input type="radio" name="langselect" id='EngON'>EN
+                </label>
+                <label>
+                    <input type="radio" name="langselect" id='UkrON' checked>UA
+                </label>
+            </form>
+            <a href="index.html">
+                <img src="photos/home_page_logo.png" alt="home page logo" width="50">
+            </a>
+            <img src="photos/mail_logo.png" alt="mail logo" width="50">
+            <a href="shopping-cart.html">
+                <img src="photos/shopping_cart_logo.png" alt="shopping cart logo" width="50">
+            </a>
+            <label>
+                <input type="search" name="item search" placeholder="Я шукаю...">
+            </label>
+            <button id='search-btn'>Пошук</button>
+            <br/>
+            <button>Усе про товар</button>
+            <button>Характеристики</button>
+            <button>Фото</button>
+            <button>Відгуки</button>
+        </header>
+        <main>
+            <div>
+                <div id="main-item">
+                 <h2>Фотоапарат Canon EOS 5D Mark IV Body Black</h2>
+                 <img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="300">
+                 <p>Ціна:</p>
+                 <p>
+                    <b>63499</b>
+                 </p>
+                </div>
+                <button id="buy-btn-main">
+                    <b >Купити</b>
+                </button>
+                <img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="50">
+                <img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="50">
+                <img src="photos/canon_5dbody.jpg" alt="camera canon 5D markIII body" width="50">
+            </div>
+            <div>
+                <h5>Усе про товар:</h5>
+                <p>Матриця 36 x 24 мм, 30.4 Мп / підтримка карт пам'яті CompactFlash Type I, SD, SDHC, SDXC (UHS-I) / LCD-дисплей 3.2" / 4K-відео / живлення від літій-іонного акумулятора / 150.7 x 116.4 x 75.9 мм, 800 г (тільки корпус) / чорний</p>
+            </div>
+            <div>
+                <h5>Характеристики:</h5>
+                <table width="700" cellpadding="0" align="left" height="250" cellspacing="0">
+                    <tr>
+                        <td>Тип матриці</td>
+                        <td>Тип: 36 x 24 мм CMOSЕфективні пікселі: Прибл. 30.4 мегапікселя
 						</td>
-					</tr>
-					<tr>
-						<td>Світлочутливість</td>
-						<td>Авто 100 - 32000</td>
-					</tr>
-					<tr>
-						<td>Об'єктив</td>
-						<td>Кріплення об'єктива: EF</td>
-					</tr>
-					<tr>
-						<td>Карта пам'ті</td>
-						<td>SD/SDHC SDXC CompactFlash</td>
-					</tr>
-				</table>
-			</div>
-		</main>
-		<footer>
-			<div>
-				<h5 id='wearesocial's>Ми в соцмережах:</h5>
-				<a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity"><img src="photos/facebook_logo.png" alt="facebook logo" width="100"></a>
-				<a href="https://www.youtube.com/"><img src="photos/youtube_logo.png" alt="youtube logo" width="100"></a>
-				<a href="https://twitter.com/?lang=uk"><img src="photos/twitter_logo.png" alt="twitter logo" width="100"></a>
-			</div>
-			<div>
-				<p id='ouraddress'>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1286.7514902536448!2d23.9979472!3d49.833006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add80fb64ef2f%3A0xc5f866f3d4e99c79!2sSoftServe%20Lviv%204!5e0!3m2!1suk!2sua!4v1576356531888!5m2!1suk!2sua" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>">
-			</div>
-			<div>
-				<button id="making-an-order">Як зробити замовлення</button>
-				<button id="shipping-and-payment">Доставка і оплата</button>
-				<button id="site-usage">Використання сайту</button>
-				<button id="credit">Кредит</button>
-				<button id="warranty">Гарантія</button>				
-				<button id="service-centers">Сервісні центри</button>
-				<button id="about-the-company">Про компанію</button>
-				<button id="item-return">Повернення товару</button>
-				<button id="contacts">Контакти</button>
-			</div>
-			<p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>				
-		</footer>
+                    </tr>
+                    <tr>
+                        <td>Світлочутливість</td>
+                        <td>Авто 100 - 32000</td>
+                    </tr>
+                    <tr>
+                        <td>Об'єктив</td>
+                        <td>Кріплення об'єктива: EF</td>
+                    </tr>
+                    <tr>
+                        <td>Карта пам'ті</td>
+                        <td>SD/SDHC SDXC CompactFlash</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <h5 id='wearesocial' s>Ми в соцмережах:</h5>
+                <a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity">
+                    <img src="photos/facebook_logo.png" alt="facebook logo" width="100">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="photos/youtube_logo.png" alt="youtube logo" width="100">
+                </a>
+                <a href="https://twitter.com/?lang=uk">
+                    <img src="photos/twitter_logo.png" alt="twitter logo" width="100">
+                </a>
+            </div>
+            <div>
+                <p id='ouraddress'>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1286.7514902536448!2d23.9979472!3d49.833006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add80fb64ef2f%3A0xc5f866f3d4e99c79!2sSoftServe%20Lviv%204!5e0!3m2!1suk!2sua!4v1576356531888!5m2!1suk!2sua" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                ">
+			
+            </div>
+            <div>
+                <button id="making-an-order">Як зробити замовлення</button>
+                <button id="shipping-and-payment">Доставка і оплата</button>
+                <button id="site-usage">Використання сайту</button>
+                <button id="credit">Кредит</button>
+                <button id="warranty">Гарантія</button>
+                <button id="service-centers">Сервісні центри</button>
+                <button id="about-the-company">Про компанію</button>
+                <button id="item-return">Повернення товару</button>
+                <button id="contacts">Контакти</button>
+            </div>
+            <p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>
+        </footer>
         <script type="text/javascript" src="js/canon5d-markIII.js" defer></script>
         <script type="text/javascript" src="js/common.js" defer></script>
-	</body>
+    </body>
 </html>

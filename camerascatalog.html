@@ -1,141 +1,175 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<meta charset="utf-8">	
-		<title>Каталог камер</title>
-	</head>
-	<body>
-		<header>
-			<select>
-				<option>0972395930</option>
-				<option>0982395930</option>
-				<option>0502395930</option>
-			</select>
-			<h1 >PhotoAce</h1>
-			<h3 id='titleexpl'>Інтернет магазин фототехніки</h3>
-			<form>				
-				<label><input type="radio" name="langselect" id='EngON'>EN</label>
-				<label><input type="radio" name="langselect" id='UkrON' checked>UA</label>				
-			</form>
-			<a href="index.html"><img src="photos/home_page_logo.png" alt="home page logo" width="50" ></a>
-			<img src="photos/mail_logo.png" alt="mail logo" width="50">
-			<a href="shopping-cart.html"><img src="photos/shopping_cart_logo.png" alt="shopping cart logo" width="50"></a>		
-			<label><input type="search" name="item search" placeholder="Я шукаю..."></label>
-			<button>Пошук</button>		
-		</header>
-		<nav>
-			<div>
-				<p>Марка камери:</p>
-				<label><input  name="cameras brand" type="radio" id='btn-filter-canon'>Canon</label>
-				<label><input  name="cameras brand" type="radio" id='btn-filter-nikon'>Nikon</label>
-				<label><input  name="cameras brand" type="radio" id='btn-filter-olympus'>Olympus</label>
-				<label><input  name="cameras brand" type="radio" id='btn-filter-sony'>Sony</label>
-			</div>
-			<div>
-				<p>Комплектація:</p>
-				<label><input  name="camera complete set" type="radio" id="btn-filter-body">Body</label>
-				<label><input  name="camera complete set" type="radio" id="btn-filter-kit">Kit</label>
-			</div>
-			<div>
-				<p>Кількість мегапікселів:</p>
-				<label><input  name="megapixels" type="radio" id="btn-filter-16px">&lt;16 Мпикс</label>
-				<label><input  name="megapixels" type="radio" id="btn-filter-16-20px"> 16-20 МпиксKit</label>
-				<label><input  name="megapixels" type="radio" id="btn-filter-20px">&gt;20 Мпикс</label>
-			</div> 			
-		</nav>
-		<main id="cameras">			
-			<ul id="cameraslist">
-				<li id="canon5dmarkIV" class="canon">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Canon EOS 5D Mark IV </p>
-						<button class="buy-btn">Купити</button>
-					</a>
-				</li>
-				<li id="canon800D" class="canon">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Canon EOS 800D</p>
-						<button>Купити</button>
-					</a>
-				</li>
-				<li id="canon500D" class="canon">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Canon EOS 500D</p>
-						<button>Купити</button>
-					</a>
-				</li>
-				<li id="sony-alphaA6100">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Sony Alpha A6100</p>
-						<button>Купити</button>
-					</a>
-				</li>
-				<li id="sony-cyber-shotDSC-RX10">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Sony Cyber-Shot DSC-RX10</p>
-						<button>Купити</button>
-					</a>
-				</li>
-				<li id="olympusFE4000">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Olympus FE-4000 grey</p>
-						<button>Купити</button>
-					</a>
-				</li>
-				<li id="nikonZ6">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Nikon Z6 + 24-70 f/4 S</p>
-						<button>Купити</button>
-					</a>
-				</li>
-				<li id="nikonZ50">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Nikon Z50 + DX 16-50mm VR</p>
-						<button>Купити</button>
-					</a>
-				</li>
-				<li id="nikonD5600">
-					<a href="canon5d-markIII.html">
-						<img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-						<p>Фотоапарат Nikon D5600 AF-P 18-55mm</p>
-						<button>Купити</button>
-					</a>
-				</li>				
-			</ul>				
-		</main>
-		<footer>
-			<div>
-				<h5 id='wearesocial'>Ми в соцмережах:</h5>
-				<a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity"><img src="photos/facebook_logo.png" alt="facebook logo" width="100"></a>
-				<a href="https://www.youtube.com/"><img src="photos/youtube_logo.png" alt="youtube logo" width="100"></a>
-				<a href="https://twitter.com/?lang=uk"><img src="photos/twitter_logo.png" alt="twitter logo" width="100"></a>
-			</div>
-			<div>
-				<p id='ouraddress'>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
-				<img src="photos/location_map.jpg" alt="location map" width="400">
-			</div>
-			<div>
-				<button id="making-an-order">Як зробити замовлення</button>
-				<button id="shipping-and-payment">Доставка і оплата</button>
-				<button id="site-usage">Використання сайту</button>
-				<button id="credit">Кредит</button>
-				<button id="warranty">Гарантія</button>				
-				<button id="service-centers">Сервісні центри</button>
-				<button id="about-the-company">Про компанію</button>
-				<button id="item-return">Повернення товару</button>
-				<button id="contacts">Контакти</button>
-			</div>
-			<p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>				
-		</footer>
-		<script type="text/javascript" src="js/camerascatalog.js" defer></script>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <meta charset="utf-8">
+        <title>Каталог камер</title>
+    </head>
+    <body>
+                <header>
+            <select>
+                <option>0972395930</option>
+                <option>0982395930</option>
+                <option>0502395930</option>
+            </select>
+            <h1 class="shop-name">PhotoAce</h1>
+            <h3 id='titleexpl'>Інтернет магазин фототехніки</h3>
+            <form>
+                <label>
+                    <input type="radio" name="langselect" id='EngON'>EN
+                </label>
+                <label>
+                    <input type="radio" name="langselect" id='UkrON' checked>UA
+                </label>
+            </form>
+            <a href="index.html">
+                <img src="photos/home_page_logo.png" alt="home page logo" width="50">
+            </a>
+            <img src="photos/mail_logo.png" alt="mail logo" width="50">
+            <a href="shopping-cart.html">
+                <img src="photos/shopping_cart_logo.png" alt="shopping cart logo" width="50">
+            </a>
+            <label>
+                <input type="search" name="item search" placeholder="Я шукаю...">
+            </label>
+            <button id='search-btn'>Пошук</button>
+        </header>
+        <nav>
+            <div>
+                <p>Марка камери:</p>
+                <label>
+                    <input name="cameras brand" type="radio" id='btn-filter-canon'>Canon
+                </label>
+                <label>
+                    <input name="cameras brand" type="radio" id='btn-filter-nikon'>Nikon
+                </label>
+                <label>
+                    <input name="cameras brand" type="radio" id='btn-filter-olympus'>Olympus
+                </label>
+                <label>
+                    <input name="cameras brand" type="radio" id='btn-filter-sony'>Sony
+                </label>
+            </div>
+            <div>
+                <p>Комплектація:</p>
+                <label>
+                    <input name="camera complete set" type="radio" id="btn-filter-body">Body
+                </label>
+                <label>
+                    <input name="camera complete set" type="radio" id="btn-filter-kit">Kit
+                </label>
+            </div>
+            <div>
+                <p>Кількість мегапікселів:</p>
+                <label>
+                    <input name="megapixels" type="radio" id="btn-filter-16px">&lt;16 Мпикс
+                </label>
+                <label>
+                    <input name="megapixels" type="radio" id="btn-filter-16-20px">16-20 МпиксKit
+                </label>
+                <label>
+                    <input name="megapixels" type="radio" id="btn-filter-20px">&gt;20 Мпикс
+                </label>
+            </div>
+        </nav>
+        <main id="cameras">
+            <ul id="cameraslist">
+                <li id="canon5dmarkIV" class="canon">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Canon EOS 5D Mark IV </p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="canon800D" class="canon">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Canon EOS 800D</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="canon500D" class="canon">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Canon EOS 500D</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="sony-alphaA6100">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Sony Alpha A6100</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="sony-cyber-shotDSC-RX10">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Sony Cyber-Shot DSC-RX10</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="olympusFE4000">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Olympus FE-4000 grey</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="nikonZ6">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Nikon Z6 + 24-70 f/4 S</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="nikonZ50">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Nikon Z50 + DX 16-50mm VR</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+                <li id="nikonD5600">
+                    <a href="canon5d-markIII.html">
+                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
+                        <p>Фотоапарат Nikon D5600 AF-P 18-55mm</p>
+                        <button class='buy-btn'>Купити</button>
+                    </a>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <div>
+                <h5 id='wearesocial'>Ми в соцмережах:</h5>
+                <a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity">
+                    <img src="photos/facebook_logo.png" alt="facebook logo" width="100">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="photos/youtube_logo.png" alt="youtube logo" width="100">
+                </a>
+                <a href="https://twitter.com/?lang=uk">
+                    <img src="photos/twitter_logo.png" alt="twitter logo" width="100">
+                </a>
+            </div>
+            <div>
+                <p id='ouraddress'>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
+                <img src="photos/location_map.jpg" alt="location map" width="400">
+            </div>
+            <div>
+                <button id="making-an-order">Як зробити замовлення</button>
+                <button id="shipping-and-payment">Доставка і оплата</button>
+                <button id="site-usage">Використання сайту</button>
+                <button id="credit">Кредит</button>
+                <button id="warranty">Гарантія</button>
+                <button id="service-centers">Сервісні центри</button>
+                <button id="about-the-company">Про компанію</button>
+                <button id="item-return">Повернення товару</button>
+                <button id="contacts">Контакти</button>
+            </div>
+            <p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>
+        </footer>
+        <script type="text/javascript" src="js/camerascatalog.js" defer></script>
         <script type="text/javascript" src="js/common.js" defer></script>
-	</body>
+    </body>
 </html>

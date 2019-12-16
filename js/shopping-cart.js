@@ -18,3 +18,5 @@ document.querySelector('.login-form input[type=submit]')
      })
      .then(_ => document.querySelector('.login-form').reset());
      }
+
+     const shoppingCartMain = document.querySelector('#shopping-cart-main')
