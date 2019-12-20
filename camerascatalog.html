@@ -4,178 +4,331 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="index.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/crossBootstrapStyle.css">
         <title>Каталог камер</title>
     </head>
     <body>
                 <header>
-            <select>
-                <option>0972395930</option>
-                <option>0982395930</option>
-                <option>0502395930</option>
-            </select>
-            <h1 class="shop-name">PhotoAce</h1>
-            <h3 id='titleexpl'>Інтернет магазин фототехніки</h3>
-            <form>
-                <label>
-                    <input type="radio" name="langselect" id='EngON'>EN
-                </label>
-                <label>
-                    <input type="radio" name="langselect" id='UkrON' checked>UA
-                </label>
-            </form>
-            <a href="index.html">
-                <img src="photos/home_page_logo.png" alt="home page logo" width="50">
-            </a>
-            <img src="photos/mail_logo.png" alt="mail logo" width="50">
-            <a href="shopping-cart.html">
-                <img src="photos/shopping_cart_logo.png" alt="shopping cart logo" width="50">
-            </a>
-            <label>
-                <input type="search" name="item search" placeholder="Я шукаю...">
-            </label>
-            <button id='search-btn'>Пошук</button>
-        </header>
-        <nav>
+            <div class="header-top">
+                <select class="phone-select">
+                    <option>0972395930</option>
+                    <option>0982395930</option>
+                    <option>0502395930</option>
+                </select>
+                <div class="lang-select">
+                    <form>
+                        <label>
+                            <input type="radio" name="langselect" id='EngON'>EN
+                
+                        </label>
+                        <label>
+                            <input type="radio" name="langselect" id='UkrON' checked>UA
+                
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <p class="navbar-brand">
+                    <b>PhotoAce 
+</br>
+<span id='titleexpl'>
+    Інтернет магазин фототехніки<span>
+</b></p>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PhotoAceNavbar" aria-controls="PhotoAceNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="PhotoAceNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#"><img src="photos/home_page_logo.png" alt="home page logo" class="image-logos"><span class="logos"><b>Home</b></span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"><img src="photos/mail_logo.png" alt="mail logo" class="image-logos"><span class="logos"><b>Mail</b></span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><img src="photos/shopping_cart_logo.png" alt="shopping cart logo" class="image-logos"><span class="logos"><b>Cart</b></span></a>
+        </li>
+    </ul>
+</div>
+</nav>
+<div class="form-inline-container">
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Я шукаю..." aria-label="Search" id="siteSearchBar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-btn">Пошук</button>
+    </form>
+</div>
+</header>
+	<main class="container" id="cam-catalog-container">
+        <nav class="cam-filter">
             <div>
                 <p>Марка камери:</p>
                 <label>
-                    <input name="cameras brand" type="radio" id='btn-filter-canon'>Canon
-                </label>
+                    <input name="cameras brand" type="radio" id='btn-filter-canon'> Canon
+                </label><br>
                 <label>
-                    <input name="cameras brand" type="radio" id='btn-filter-nikon'>Nikon
-                </label>
+                    <input name="cameras brand" type="radio" id='btn-filter-nikon'> Nikon
+                </label><br>
                 <label>
-                    <input name="cameras brand" type="radio" id='btn-filter-olympus'>Olympus
-                </label>
+                    <input name="cameras brand" type="radio" id='btn-filter-olympus'> Olympus
+                </label><br>
                 <label>
-                    <input name="cameras brand" type="radio" id='btn-filter-sony'>Sony
-                </label>
-            </div>
+                    <input name="cameras brand" type="radio" id='btn-filter-sony'> Sony
+                </label><br>
+            </div><br>
             <div>
                 <p>Комплектація:</p>
                 <label>
-                    <input name="camera complete set" type="radio" id="btn-filter-body">Body
-                </label>
+                    <input name="camera complete set" type="radio" id="btn-filter-body"> Body
+                </label><br>
                 <label>
-                    <input name="camera complete set" type="radio" id="btn-filter-kit">Kit
-                </label>
-            </div>
+                    <input name="camera complete set" type="radio" id="btn-filter-kit"> Kit
+                </label><br>
+            </div><br>
             <div>
                 <p>Кількість мегапікселів:</p>
                 <label>
-                    <input name="megapixels" type="radio" id="btn-filter-16px">&lt;16 Мпикс
-                </label>
+                    <input name="megapixels" type="radio" id="btn-filter-16px"> &lt;16 Мпикс
+                </label><br>
                 <label>
-                    <input name="megapixels" type="radio" id="btn-filter-16-20px">16-20 МпиксKit
-                </label>
+                    <input name="megapixels" type="radio" id="btn-filter-16-20px"> 16-20 МпиксKit
+                </label><br>
                 <label>
-                    <input name="megapixels" type="radio" id="btn-filter-20px">&gt;20 Мпикс
-                </label>
-            </div>
+                    <input name="megapixels" type="radio" id="btn-filter-20px"> &gt;20 Мпикс
+                </label><br>
+            </div><br>
         </nav>
-        <main id="cameras">
-            <ul id="cameraslist">
-                <li id="canon5dmarkIV" class="canon">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Canon EOS 5D Mark IV </p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="canon800D" class="canon">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Canon EOS 800D</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="canon500D" class="canon">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Canon EOS 500D</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="sony-alphaA6100">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Sony Alpha A6100</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="sony-cyber-shotDSC-RX10">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Sony Cyber-Shot DSC-RX10</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="olympusFE4000">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Olympus FE-4000 grey</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="nikonZ6">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Nikon Z6 + 24-70 f/4 S</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="nikonZ50">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Nikon Z50 + DX 16-50mm VR</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-                <li id="nikonD5600">
-                    <a href="canon5d-markIII.html">
-                        <img src="photos/canon5d_markIII.jpg" alt="camera canon 5d mark III" width="100">
-                        <p>Фотоапарат Nikon D5600 AF-P 18-55mm</p>
-                        <button class='buy-btn'>Купити</button>
-                    </a>
-                </li>
-            </ul>
-        </main>
+        <section class="row">
+        	<div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
+        <img src="photos/canon5d_markIII.jpg" class="card-img-top" alt="canon 5d mark III">
+        <div class="card-body">
+            <h5 class="card-title">Canon 5d mark III</h5>
+            <p class="card-text">
+                <b>34999</b>
+            </p>
+            <a href="#" class="btn btn-primary" >
+                <b>Купити</b>
+            </a>
+        </div>
+    </div>                
+        </section>
+    </main>
         <footer>
-            <div>
-                <h5 id='wearesocial'>Ми в соцмережах:</h5>
-                <a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity">
-                    <img src="photos/facebook_logo.png" alt="facebook logo" width="100">
-                </a>
-                <a href="https://www.youtube.com/">
-                    <img src="photos/youtube_logo.png" alt="youtube logo" width="100">
-                </a>
-                <a href="https://twitter.com/?lang=uk">
-                    <img src="photos/twitter_logo.png" alt="twitter logo" width="100">
-                </a>
-            </div>
-            <div>
-                <p id='ouraddress'>Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930</p>
-                <img src="photos/location_map.jpg" alt="location map" width="400">
-            </div>
-            <div>
-                <button id="making-an-order">Як зробити замовлення</button>
-                <button id="shipping-and-payment">Доставка і оплата</button>
-                <button id="site-usage">Використання сайту</button>
-                <button id="credit">Кредит</button>
-                <button id="warranty">Гарантія</button>
-                <button id="service-centers">Сервісні центри</button>
-                <button id="about-the-company">Про компанію</button>
-                <button id="item-return">Повернення товару</button>
-                <button id="contacts">Контакти</button>
-            </div>
-            <p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>
-        </footer>
-        <script type="text/javascript" src="js/camerascatalog.js" defer></script>
-        <script type="text/javascript" src="js/common.js" defer></script>
+    <div>
+        <h5 id='wearesocial'><b>Ми в соцмережах:</b></h5>
+        <br>
+        <div id="we-are-social-container">
+            <a href="https://www.facebook.com/groups/978439779198456/?multi_permalinks=983950561980711%2C982884715420629%2C983932085315892%2C983802171995550%2C983775128664921&notif_id=1575040647073211&notif_t=group_activity">
+                <img src="photos/facebook_logo.png" alt="facebook logo" width="100">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="photos/youtube_logo.png" alt="youtube logo" width="100">
+            </a>
+            <a href="https://twitter.com/?lang=uk">
+                <img src="photos/twitter_logo.png" alt="twitter logo" width="100">
+            </a>
+        </div>
+        <br>
+    </div>
+    <div class="address-map">
+        <div class='ouraddress' id="ouraddress">
+            <b>
+                Наша адреса:<br>
+                <br>
+                м. Львів вул.<br>вул. Федьковича 60а<br>
+                <br>
+                Контакти:<br>
+                <br>
+                Процик Юрій<br>
+                тел. 0972395930
+            </b>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1286.7514902536448!2d23.9979472!3d49.833006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add80fb64ef2f%3A0xc5f866f3d4e99c79!2sSoftServe%20Lviv%204!5e0!3m2!1suk!2sua!4v1576356531888!5m2!1suk!2sua" width=100%; min-height=500px; frameborder="0" style="border:0;" allowfullscreen="" id="ourmap" class="map"></iframe>
+    </div>
+    <div id="info-bnts"> 
+      <div class="btn-top">       
+        <button type="button" class="btn btn-secondary" id="shipping-and-payment">Доставка і оплата</button>
+        <button type="button" class="btn btn-secondary" id="site-usage">Використання сайту</button>
+        <button type="button" class="btn btn-secondary" id="credit">Кредит</button>
+        <button type="button" class="btn btn-secondary" id="warranty">Гарантія</button>
+       </div>
+       <div class="btn-btm"> 
+        <button type="button" class="btn btn-secondary" id="service-centers">Сервісні центри</button>
+        <button type="button" class="btn btn-secondary" id="about-the-company">Про компанію</button>
+        <button type="button" class="btn btn-secondary" id="item-return">Повернення товару</button>
+        <button type="button" class="btn btn-secondary" id="contacts">Контакти</button>
+       </div>
+    </div>
+    <div class='trademark-container'>
+    <p id='trademark'>© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD</p>
+    </div>  
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Ваш email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Текст:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div> 
+</footer>       
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/common.js" defer></script>
+        <script type="text/javascript" src="js/camerascatalog.js" defer></script>
     </body>
 </html>
+
