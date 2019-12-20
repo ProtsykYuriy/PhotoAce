@@ -3,9 +3,11 @@ const camerasCatalog = document.querySelector('#camerascatalog');
 const lensesCatalog = document.querySelector('#lensescatalog');
 const flashesCatalog =  document.querySelector('#flashescatalog');
 const tripodCatalog =  document.querySelector('#tripodcatalog');
-const lastNovelties = document.querySelector('#last-novelties');
+//const lastNovelties = document.querySelector('#last-novelties');
 const aboutUsTitle = document.querySelector('#about-us-title');
-const buyBtn = document.getElementsByClassName('buy-btn');
+const buyBtn = document.getElementsByClassName('.buy-btn');
+const buyBtnIndx= document.querySelectorAll('#buy-btn-index')
+
 
 btnEnglishSwitchON.addEventListener('click',langEngChange);
 function langEngChange(){
@@ -14,8 +16,9 @@ function langEngChange(){
     lensesCatalog.textContent = 'Lenses';
     flashesCatalog.textContent = 'Flashes';    
     tripodCatalog.textContent = 'Tripods';
-    lastNovelties.textContent = 'Last Novelties';
-    aboutUsTitle.textContent = 'About Us:';    
+    //lastNovelties.textContent = 'Last Novelties';
+    aboutUsTitle.textContent = 'About Us:'; 
+    buyBtnIndx.textContent = 'Buy' ;    
     for (i = 0; i < buyBtn.length; i++) {
     buyBtn[i].textContent = 'Buy';
 };
@@ -28,9 +31,11 @@ function langUkrChange(){
     lensesCatalog.textContent = "Об'єктиви";
     flashesCatalog.textContent = 'Спалахи';    
     tripodCatalog.textContent = 'Штативи';
-    lastNovelties.textContent = 'Останні новинки';
-    aboutUsTitle.textContent = 'Про нас:';    
+    buyBtnIndx.textContent = 'Купити';
+    //lastNovelties.textContent = 'Останні новинки';
+    aboutUsTitle.textContent = 'Про нас:';      
     for (i = 0; i < buyBtn.length; i++) {
     buyBtn[i].textContent = 'Купити';
 };
 }
+
