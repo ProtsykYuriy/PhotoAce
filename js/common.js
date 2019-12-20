@@ -1,4 +1,4 @@
-const makingAnOrderInfo='Самовивіз із поштоматів \nВи можете отримати замовлення у брендованих поштоматах інтернет-супермаркету Rozetka. Поштомат − це термінал самообслуговування, що надає змогу заощадити час при отриманні посилки вагою до 5 кг. Усе, що потрібно для отримання замовлення, − це мобільний телефон і код відкриття комірки, отриманий в sms-повідомленні. Зараз наші поштомати можна знайти на 9 станціях';
+//const makingAnOrderInfo='Самовивіз із поштоматів \nВи можете отримати замовлення у брендованих поштоматах інтернет-супермаркету Rozetka. Поштомат − це термінал самообслуговування, що надає змогу заощадити час при отриманні посилки вагою до 5 кг. Усе, що потрібно для отримання замовлення, − це мобільний телефон і код відкриття комірки, отриманий в sms-повідомленні. Зараз наші поштомати можна знайти на 9 станціях';
 const shippingAndPaymentInfo= 'Доставка у відділення «Нова пошта» \nЗа допомогою доставки «Нова пошта», Ви можете отримати товар навіть у найвіддаленіших куточках України. При покупці товарів інших продавців послуга післяплати оплачується окремо від доставки.';
 const warrantyInfo= 'Ви можете звертатися за гарантійним обслуговуванням до офіційних сервісних центрів виробника товару та до наших магазинів (крім точки видачі в м. Київ, вул. Декабристів, 9е)';
 const creditInfo="Кредит оформлюється в нашому магазині за адресою Київ, пр. С. Бандери, 6 або за адресою, яка узгоджується з менеджером банку:\nUKRSIBBANK — у відділеннях банку,\nКредитМаркет і ПУМБ — у відділеннях «Нової Пошти»,\nАльфа-Банк — кур'єром за зручною для вас адресою після попереднього заповнення онлайн-анкети.";
@@ -12,8 +12,8 @@ function itemInfoAlertion(n){
     alert(n);
 };
 
-const makingAnOrder = document.querySelector('#making-an-order');
-makingAnOrder.addEventListener('click', itemInfoAlertion.bind(this,makingAnOrderInfo));
+//const makingAnOrder = document.querySelector('#making-an-order');
+//makingAnOrder.addEventListener('click', itemInfoAlertion.bind(this,makingAnOrderInfo));
 const shippingAndPayment = document.querySelector('#shipping-and-payment');
 shippingAndPayment.addEventListener('click', itemInfoAlertion.bind(this,shippingAndPaymentInfo));
 const warranty = document.querySelector('#warranty');
@@ -35,16 +35,17 @@ const tradeMark = document.querySelector('#trademark');
 const ourAddress = document.querySelector('#ouraddress');
 const weAreSocial = document.querySelector('#wearesocial');
 const titleExplanation = document.querySelector('#titleexpl');
-const searchBtn = document.querySelector('#search-btn')
+const searchBtn = document.querySelector('#search-btn');
+
 
 const btnEnglishSwitchON = document.querySelector('#EngON');
 btnEnglishSwitchON.addEventListener('click',langEngChange);
 function langEngChange(){
 	tradeMark.textContent= '© PhotoAce ™ Online Store 2001–2019 TM is used under the license of PhotoAceLTD';
-	ourAddress.textContent= 'Our address:Lviv str. Fedkovicha 60a Contacts: Protsyk Yury 0972395930'
-	weAreSocial.textContent= 'Follow us';
+	ourAddress.textContent= 'Our address: Lviv str. Fedkovicha 60a Contacts: Protsyk Yury 0972395930'
+	weAreSocial.textContent= 'Follow us:';
 	titleExplanation.textContent= 'Online store of photographic equipment';
-	makingAnOrder.textContent = 'Making an order';
+	//makingAnOrder.textContent = 'Making an order';
 	shippingAndPayment.textContent = 'Shipping and payment';
 	warranty.textContent = 'Warranty';
 	credit.textContent = 'Credit';
@@ -54,15 +55,16 @@ function langEngChange(){
 	itemReturn.textContent = 'Item return';
     siteUsage.textContent = 'Site usage';
     searchBtn.textContent = 'Search';
+    
 }
 const btnUkrainianSwitchON = document.querySelector('#UkrON');
 btnUkrainianSwitchON.addEventListener('click',langUkrChange);
 function langUkrChange(){
 	tradeMark.textContent= '© Інтернет-магазин «PhotoAce™» 2001–2019 ТМ використовується на підставі ліцензії правовласника PhotoAceLTD';
-	ourAddress.textContent= 'Наша адреса:м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930';
+	ourAddress.textContent= 'Наша адреса: м. Львів вул. Федьковича 60а Контакти: Процик Юрій 0972395930';
 	weAreSocial.textContent= 'Ми в соцмережах:';
 	titleExplanation.textContent= 'Інтернет магазин фототехніки';
-	makingAnOrder.textContent = 'Як зробити замовлення';
+	//makingAnOrder.textContent = 'Як зробити замовлення';
 	shippingAndPayment.textContent = 'Доставка і оплата';
 	warranty.textContent = 'Гарантія';
 	credit.textContent = 'Кредит';
@@ -72,4 +74,5 @@ function langUkrChange(){
 	itemReturn.textContent = 'Повернення товару';
     siteUsage.textContent = 'Використання сайту';
     searchBtn.textContent = 'Пошук';
+   
 }
