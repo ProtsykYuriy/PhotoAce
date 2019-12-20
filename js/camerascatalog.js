@@ -22,12 +22,3 @@ const btnFilter16px = document.querySelector('#btn-filter-16px');
 const btnFilter16_20px = document.querySelector('#btn-filter-16-20px');
 const btnFilter20px = document.querySelector('#btn-filter-20px');
 
-    // for(let i=0; i<10; i++){
-// 	const canonRemove = document.querySelector('ul li.canon');
-// 	camerasCatalogue.removeChild(canonRemove);
-// }
-
-// for (let i=0; i<5; i++) {
-//     const parToRemove = document.querySelector('section p.dynamic');
-//     sect.removeChild(parToRemove);
-// }
